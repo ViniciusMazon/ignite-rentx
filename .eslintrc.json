@@ -29,6 +29,8 @@
         "ts": "never"
       }
     ],
+    "import/prefer-default-export": "off",
+    "no-useless-constructor": "off",
     "prettier/prettier": "error"
   },
   "settings": {

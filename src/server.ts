@@ -8,5 +8,5 @@ app.use('/v1/categories', categoriesRoutes);
 
 app.listen(3333, () => {
   console.clear();
-  console.log("🛰  Don't panic! The server is running...");
+  console.log("🛰  Don't panic! The server is up...");
 });
