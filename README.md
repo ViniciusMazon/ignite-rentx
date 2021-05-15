@@ -1,5 +1,8 @@
 # Sobre o projeto
 
+# Padrões
+* SOLID
+* Singleton
 
 # Criado utilizando
 [uuid](https://www.npmjs.com/package/uuid)
