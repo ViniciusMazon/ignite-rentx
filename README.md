@@ -10,3 +10,4 @@
 [expressJS](https://www.npmjs.com/package/uuid)
 [typeScript](https://www.typescriptlang.org/)
 [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+[multer](https://www.npmjs.com/package/multer)
