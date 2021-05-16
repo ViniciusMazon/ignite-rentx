@@ -12,3 +12,4 @@
 [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 [multer](https://www.npmjs.com/package/multer)
 [csv-parse](https://csv.js.org/parse/)
+[swagger](https://swagger.io/)
