@@ -1,0 +1,17 @@
+# Versão
+version: "3.7"
+
+services: 
+  # Nome do serviço
+  app: 
+    # Gera o build no diretório local
+    build: .
+    # Nome do container
+    container_name: rentx
+    # Compartilhamento de portas
+    ports:
+      - 3333:3333
+    # Comartilhar diretório
+    volumes:
+      # Tudo do local para o /usr/app
+      - .:/usr/app
