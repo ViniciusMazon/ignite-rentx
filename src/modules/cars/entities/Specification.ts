@@ -1,9 +1,9 @@
 import { v4 as uuid } from 'uuid';
-import { Entity, Column, PrimaryKey, CreateDateColumn } from 'typeorm';
+import { Entity, Column, PrimaryColumn, CreateDateColumn } from 'typeorm';
 
-@Entity()
+@Entity('specifications')
 class Specification {
-  @PrimaryKey()
+  @PrimaryColumn()
   public id: string;
 
   @Column()
