@@ -28,3 +28,5 @@
 [typeorm](https://typeorm.io/)
 <br />
 [pg](https://www.npmjs.com/package/pg)
+<br />
+[tsyringe](https://www.npmjs.com/package/tsyringe)
