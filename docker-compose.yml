@@ -2,6 +2,19 @@
 version: "3.7"
 
 services: 
+  database_ignite:
+    image: postgres
+    container_name: database_ignite
+    restart: always
+    ports: 
+      - 5432:5432
+    environment: 
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=ignite
+      - POSTGRES_DB=rentx
+    volumes:
+      - pgdata:/data/postgres
+
   # Nome do serviço
   app: 
     # Gera o build no diretório local
@@ -15,3 +28,6 @@ services:
     volumes:
       # Tudo do local para o /usr/app
       - .:/usr/app
+
+volumes:
+  pgdata:
