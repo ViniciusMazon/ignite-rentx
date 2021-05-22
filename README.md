@@ -26,3 +26,5 @@
 [docker](https://www.docker.com/)
 <br />
 [typeorm](https://typeorm.io/)
+<br />
+[pg](https://www.npmjs.com/package/pg)
