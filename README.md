@@ -30,3 +30,5 @@
 [pg](https://www.npmjs.com/package/pg)
 <br />
 [tsyringe](https://www.npmjs.com/package/tsyringe)
+<br />
+[bcrypt](https://www.npmjs.com/package/bcrypt)
