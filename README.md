@@ -32,3 +32,5 @@
 [tsyringe](https://www.npmjs.com/package/tsyringe)
 <br />
 [bcrypt](https://www.npmjs.com/package/bcrypt)
+<br />
+[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
