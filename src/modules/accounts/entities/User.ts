@@ -22,6 +22,9 @@ class User {
   @Column()
   isAdmin: boolean;
 
+  @Column()
+  avatar: string;
+
   @CreateDateColumn()
   // eslint-disable-next-line camelcase
   created_at: Date;
