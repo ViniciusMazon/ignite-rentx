@@ -1,5 +1,9 @@
-# Sobre o projeto
+<h1 align="center">
+  <img alt="move it logo" title="MoveIt" src="documentation\readme\logo.png">
+</h1>
 
+# Sobre o projeto
+API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/rocketseat-education)💜.
 # Padrões
 * SOLID
 * Singleton
@@ -36,3 +40,10 @@
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 <br />
 [express-async-erros](https://www.npmjs.com/package/express-async-errors)
+<br />
+
+# Licença
+Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+---
+Desenvolvido com 🖤 por Vinicius Mazon
