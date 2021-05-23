@@ -34,3 +34,5 @@
 [bcrypt](https://www.npmjs.com/package/bcrypt)
 <br />
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+<br />
+[express-async-erros](https://www.npmjs.com/package/express-async-errors)
