@@ -42,6 +42,9 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 [express-async-erros](https://www.npmjs.com/package/express-async-errors)
 <br />
 [jest](https://jestjs.io/pt-BR/)
+<br />
+[tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths)
+<br />
 
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
