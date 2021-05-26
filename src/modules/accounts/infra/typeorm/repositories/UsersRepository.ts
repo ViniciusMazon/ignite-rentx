@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
 import { getRepository, Repository } from 'typeorm';
-import { ICreateUserDTO } from '../../dto/ICreateUserDTO';
-import { User } from '../../entities/User';
-import { IUsersRepository } from '../IUsersRepository';
+import { ICreateUserDTO } from '../../../dto/ICreateUserDTO';
+import { User } from '../User';
+import { IUsersRepository } from '../../../repositories/IUsersRepository';
 
 class UsersRepository implements IUsersRepository {
   private repository: Repository<User>;
