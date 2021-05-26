@@ -35,7 +35,6 @@
     "husky": "^6.0.0",
     "jest": "^27.0.1",
     "prettier": "^2.3.0",
-    "ts-jest": "^27.0.0",
     "ts-node-dev": "^1.1.6",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.4"
@@ -50,6 +49,7 @@
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.1.6",
+    "ts-jest": "^27.0.0",
     "tsyringe": "^4.5.0",
     "typeorm": "^0.2.32",
     "uuid": "^8.3.2"
