@@ -18,9 +18,9 @@ container.registerSingleton<ISpecificationsRepository>(
   SpecificationsRepository,
 );
 
+container.registerSingleton<ICarsRepository>('CarsRepository', CarsRepository);
+
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
   UsersRepository,
 );
-
-container.registerSingleton<ICarsRepository>('CarsRepository', CarsRepository);

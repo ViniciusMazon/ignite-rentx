@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import { ICreateUserDTO } from '../../dto/ICreateUserDTO';
-import { User } from '../../infra/typeorm/User';
+import { User } from '../../infra/typeorm/entities/User';
 import { IUsersRepository } from '../IUsersRepository';
 
 class UsersRepositoryInMemory implements IUsersRepository {
