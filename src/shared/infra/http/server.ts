@@ -1,14 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
-import express, { NextFunction } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import swaggerUi from 'swagger-ui-express';
 import { AppError } from '@shared/errors/AppError';
+import createConnection from '@shared/infra/typeorm';
 import swaggerFile from '../../../swagger.json';
-import '../typeorm';
 import { router } from './routes';
 import '@shared/container';
 
+createConnection();
 const app = express();
 
 app.use(express.json());
