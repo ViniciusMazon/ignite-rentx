@@ -1,4 +1,3 @@
-import { query } from 'express';
 import {
   MigrationInterface,
   QueryRunner,
