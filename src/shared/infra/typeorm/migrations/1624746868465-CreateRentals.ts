@@ -9,6 +9,7 @@ export class CreateRentals1624746868465 implements MigrationInterface {
           {
             name: 'id',
             type: 'uuid',
+            isPrimary: true,
           },
           {
             name: 'car_id',
