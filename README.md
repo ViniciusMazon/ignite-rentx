@@ -45,6 +45,8 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths)
 <br />
+[dayJS](https://day.js.org/)
+<br />
 
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
