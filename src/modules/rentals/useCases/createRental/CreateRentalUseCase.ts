@@ -3,6 +3,7 @@ import { Rental } from '@modules/rentals/infra/typeorm/entities/Rental';
 import { IRentalsRepository } from '@modules/rentals/repositories/IRentalsRepository';
 import { IDateProvider } from '@shared/container/providers/date/IDateProvider';
 import { AppError } from '@shared/errors/AppError';
+import { inject, injectable } from 'tsyringe';
 
 interface IRequest {
   user_id: string;
@@ -10,9 +11,12 @@ interface IRequest {
   expected_return_date: Date;
 }
 
+@injectable()
 class CreateRentalUseCase {
   constructor(
+    @inject('RentalsRepository')
     private rentalsRepository: IRentalsRepository,
+    @inject('DateProvider')
     private dateProvider: IDateProvider,
   ) {}
 
@@ -35,9 +39,10 @@ class CreateRentalUseCase {
     }
 
     const compare = this.dateProvider.compareInHours(
-      expected_return_date,
       this.dateProvider.now(),
+      expected_return_date,
     );
+
     const minimumRequiredHours = 24;
     if (compare < minimumRequiredHours) {
       throw new AppError('Invalid return time');
