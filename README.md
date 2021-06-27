@@ -47,6 +47,8 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [dayJS](https://day.js.org/)
 <br />
+[supertest](https://www.npmjs.com/package/supertest)
+<br />
 
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
