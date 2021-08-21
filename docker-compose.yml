@@ -1,39 +1,28 @@
-# Versão
-version: "3.7"
-
-services: 
+version: '3.7'
+services:
   database-pg:
     image: postgres
     container_name: database-pg
     restart: always
-    ports: 
-      - 5432:5432
-    environment: 
+    ports:
+      - '5432:5432'
+    environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=ignite
       - POSTGRES_DB=rentx
     volumes:
-      - pgdata:/data/postgres
-    
-
-  # Nome do serviço
-  app: 
-    # Gera o build no diretório local
+      - 'pgdata:/data/postgres'
+  app:
     build: .
-    # Nome do container
     container_name: rentx
-    # Compartilhamento de portas
     ports:
-      - 3333:3333
-    # Comartilhar diretório
+      - '3333:3333'
     volumes:
-      # Tudo do local para o /usr/app
-      - .:/usr/app
+      - '.:/usr/app'
     links:
       - database-pg
-    depends_on: 
+    depends_on:
       - database-pg
-
 volumes:
   pgdata:
     driver: local
