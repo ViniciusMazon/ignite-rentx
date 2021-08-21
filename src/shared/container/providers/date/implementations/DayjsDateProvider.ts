@@ -6,7 +6,7 @@ import { IDateProvider } from '../IDateProvider';
 dayjs.extend(utc);
 
 class DayjsDateProvider implements IDateProvider {
-  now(): Date {
+  public now(): Date {
     return dayjs().toDate();
   }
 
@@ -18,6 +18,12 @@ class DayjsDateProvider implements IDateProvider {
     const startDateUTC = this.convertToUTC(start_date);
     const endDateUTC = this.convertToUTC(end_date);
     return dayjs(startDateUTC).diff(endDateUTC, 'hours');
+  }
+
+  public compareInDays(start_date: Date, end_date: Date): number {
+    const startDateUTC = this.convertToUTC(start_date);
+    const endDateUTC = this.convertToUTC(end_date);
+    return dayjs(startDateUTC).diff(endDateUTC, 'days');
   }
 }
 
