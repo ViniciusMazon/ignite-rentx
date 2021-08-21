@@ -32,7 +32,12 @@
     "import/prefer-default-export": "off",
     "no-useless-constructor": "off",
     "class-methods-use-this": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
