@@ -17,6 +17,7 @@ class DayjsDateProvider implements IDateProvider {
   public compareInHours(start_date: Date, end_date: Date): number {
     const startDateUTC = this.convertToUTC(start_date);
     const endDateUTC = this.convertToUTC(end_date);
+    console.log(dayjs(startDateUTC).diff(endDateUTC, 'hours'));
     return dayjs(startDateUTC).diff(endDateUTC, 'hours');
   }
 

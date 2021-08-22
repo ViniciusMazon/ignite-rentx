@@ -42,8 +42,8 @@ class CreateRentalUseCase {
     }
 
     const compare = this.dateProvider.compareInHours(
-      this.dateProvider.now(),
       expected_return_date,
+      this.dateProvider.now(),
     );
 
     const minimumRequiredHours = 24;
