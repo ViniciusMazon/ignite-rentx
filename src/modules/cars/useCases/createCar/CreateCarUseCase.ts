@@ -19,7 +19,7 @@ class CreateCarUseCase {
   constructor(
     @inject('CarsRepository')
     private carsRepository: ICarsRepository,
-  ) { }
+  ) {}
 
   async execute({
     name,
