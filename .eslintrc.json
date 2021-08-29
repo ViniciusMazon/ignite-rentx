@@ -33,7 +33,7 @@
     "no-useless-constructor": "off",
     "class-methods-use-this": "off",
     "prettier/prettier": "error",
-    "camelcase": "off",
+    "camelcase": "off"
   },
   "settings": {
     "import/resolver": {
