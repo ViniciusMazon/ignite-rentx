@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import { IDateProvider } from '../IDateProvider';

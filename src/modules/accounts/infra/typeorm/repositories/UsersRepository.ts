@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import { getRepository, Repository } from 'typeorm';
 import { ICreateUserDTO } from '../../../dto/ICreateUserDTO';
 import { User } from '../entities/User';

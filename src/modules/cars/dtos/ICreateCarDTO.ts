@@ -1,6 +1,6 @@
 import { Specification } from '../infra/typeorm/entities/Specification';
 
-/* eslint-disable camelcase */
+
 interface ICreateCarDTO {
   name: string;
   description: string;

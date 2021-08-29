@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import { Request, Response, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken';
 import { AppError } from '../../../errors/AppError';

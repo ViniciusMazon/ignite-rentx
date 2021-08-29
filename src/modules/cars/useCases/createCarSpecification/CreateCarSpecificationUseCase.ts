@@ -4,7 +4,7 @@ import { ISpecificationsRepository } from '@modules/cars/repositories/ISpecifica
 import { AppError } from '@shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
 
-/* eslint-disable camelcase */
+
 interface IRequest {
   car_id: string;
   specifications_id: string[];

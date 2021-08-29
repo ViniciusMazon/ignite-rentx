@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import { ICreateCarDTO } from '../dtos/ICreateCarDTO';
 import { Car } from '../infra/typeorm/entities/Car';
 

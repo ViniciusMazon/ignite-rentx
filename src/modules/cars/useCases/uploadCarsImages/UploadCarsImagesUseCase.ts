@@ -1,7 +1,7 @@
 import { ICarsImagesRepository } from '@modules/cars/repositories/ICarsImagesRepository';
 import { inject, injectable } from 'tsyringe';
 
-/* eslint-disable camelcase */
+
 interface IRequest {
   car_id: string;
   images_name: string[];

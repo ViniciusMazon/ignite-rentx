@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import {
   Column,
   CreateDateColumn,

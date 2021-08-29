@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import { ICarsImagesRepository } from '@modules/cars/repositories/ICarsImagesRepository';
 import { getRepository, Repository } from 'typeorm';
 import { CarImage } from '../typeorm/entities/CarImage';

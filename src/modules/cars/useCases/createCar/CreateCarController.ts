@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+
 import { container } from 'tsyringe';
 import { Request, Response } from 'express';
 import { CreateCarUseCase } from './CreateCarUseCase';

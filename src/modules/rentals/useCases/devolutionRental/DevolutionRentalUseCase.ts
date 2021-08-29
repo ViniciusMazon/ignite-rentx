@@ -5,7 +5,7 @@ import { IRentalsRepository } from '@modules/rentals/repositories/IRentalsReposi
 import { IDateProvider } from '@shared/container/providers/date/IDateProvider';
 import { AppError } from '@shared/errors/AppError';
 
-/* eslint-disable camelcase */
+
 interface IRequest {
   id: string;
   user_id: string;
