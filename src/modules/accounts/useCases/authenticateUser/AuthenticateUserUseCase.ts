@@ -28,7 +28,7 @@ class AuthenticateUserUseCase {
     private usersRepository: IUsersRepository,
     @inject('UsersTokensRepository')
     private userTokensRepository: IUsersTokensRepository,
-    @inject('DateProvider')
+    @inject('DayjsDateProvider')
     private dateProvider: IDateProvider,
   ) {}
 
