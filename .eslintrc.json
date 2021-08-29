@@ -32,7 +32,8 @@
     "import/prefer-default-export": "off",
     "no-useless-constructor": "off",
     "class-methods-use-this": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "camelcase": "off",
   },
   "settings": {
     "import/resolver": {
