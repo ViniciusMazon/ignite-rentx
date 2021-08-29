@@ -49,6 +49,10 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [supertest](https://www.npmjs.com/package/supertest)
 <br />
+[ethereal](http://ethereal.email/)
+<br />
+[nodemailer](https://nodemailer.com/about/)
+<br />
 
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
