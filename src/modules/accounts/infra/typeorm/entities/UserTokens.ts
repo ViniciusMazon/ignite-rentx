@@ -7,6 +7,7 @@ import {
   ManyToOne,
   PrimaryColumn,
 } from 'typeorm';
+import {v4 as uuidv4} from 'uuid';
 import { User } from './User';
 
 @Entity('users_tokens')
@@ -29,6 +30,12 @@ class UserTokens {
 
   @CreateDateColumn()
   created_at: Date;
+
+  constructor() {
+    if(!this.id) {
+      this.id = uuidv4();
+    }
+  }
 }
 
 export { UserTokens };
