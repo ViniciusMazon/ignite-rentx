@@ -53,7 +53,8 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [nodemailer](https://nodemailer.com/about/)
 <br />
-
+[handlebars](https://handlebarsjs.com/)
+<br />
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
