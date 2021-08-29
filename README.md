@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="move it logo" title="MoveIt" src="documentation\readme\logo.png">
+  <img alt="move it logo" title="MoveIt" src="https://i.imgur.com/oUAKMC5.png">
 </h1>
 
 # Sobre o projeto
