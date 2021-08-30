@@ -15,7 +15,7 @@ describe('Create Category Controller', () => {
     const password = await hash('admin', 8);
 
     await connection.query(
-      `INSERT INTO USERS(id, name, email, password, "isAdmin", driver_license, created_at) 
+      `INSERT INTO USERS(id, name, email, password, "isAdmin", driver_license, created_at)
       VALUES('${id}', 'admin', 'admin@rentx.com', '${password}', true, 'xxx-123', 'now()')`,
     );
   });
@@ -31,7 +31,7 @@ describe('Create Category Controller', () => {
       password: 'admin',
     });
 
-    const { token } = responseAdminToken.body;
+    const { refresh_token } = responseAdminToken.body;
 
     const response = await request(app)
       .post('/categories')
@@ -40,7 +40,7 @@ describe('Create Category Controller', () => {
         description: 'Category supertest description',
       })
       .set({
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${refresh_token}`,
       });
 
     expect(response.status).toBe(201);
@@ -52,7 +52,7 @@ describe('Create Category Controller', () => {
       password: 'admin',
     });
 
-    const { token } = responseAdminToken.body;
+    const { refresh_token } = responseAdminToken.body;
 
     const response = await request(app)
       .post('/categories')
@@ -61,7 +61,7 @@ describe('Create Category Controller', () => {
         description: 'Category supertest description',
       })
       .set({
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${refresh_token}`,
       });
 
     expect(response.status).toBe(400);

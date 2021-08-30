@@ -15,7 +15,7 @@ describe('List Categories Controller', () => {
     const password = await hash('admin', 8);
 
     await connection.query(
-      `INSERT INTO USERS(id, name, email, password, "isAdmin", driver_license, created_at) 
+      `INSERT INTO USERS(id, name, email, password, "isAdmin", driver_license, created_at)
       VALUES('${id}', 'admin', 'admin@rentx.com', '${password}', true, 'xxx-123', 'now()')`,
     );
   });
@@ -31,7 +31,7 @@ describe('List Categories Controller', () => {
       password: 'admin',
     });
 
-    const { token } = responseAdminToken.body;
+    const { refresh_token } = responseAdminToken.body;
 
     await request(app)
       .post('/categories')
@@ -40,7 +40,7 @@ describe('List Categories Controller', () => {
         description: 'Category supertest description',
       })
       .set({
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${refresh_token}`,
       });
 
     const response = await request(app).get('/categories');
