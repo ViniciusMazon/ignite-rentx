@@ -55,6 +55,8 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [handlebars](https://handlebarsjs.com/)
 <br />
+[aws-sdk](https://aws.amazon.com/pt/sdk-for-javascript/)
+<br />
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
