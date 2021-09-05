@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.4",
+    "aws-sdk": "^2.983.0",
     "bcrypt": "^5.0.1",
     "csv-parse": "^4.15.4",
     "dayjs": "^1.10.5",
