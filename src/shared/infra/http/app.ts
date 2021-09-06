@@ -1,8 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-console */
-import express, { NextFunction, Request, Response } from 'express';
+import 'reflect-metadata';
+import 'dotenv/config';
 import 'express-async-errors';
+import express, { NextFunction, Request, Response } from 'express';
 import swaggerUi from 'swagger-ui-express';
+
 import { AppError } from '@shared/errors/AppError';
 import createConnection from '@shared/infra/typeorm';
 import swaggerFile from '../../../swagger.json';
