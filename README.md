@@ -57,6 +57,10 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [aws-sdk](https://aws.amazon.com/pt/sdk-for-javascript/)
 <br />
+[mime](https://www.npmjs.com/package/mime)
+<br />
+[dotenv](https://www.npmjs.com/package/dotenv)
+<br />
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
