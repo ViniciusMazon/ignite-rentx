@@ -63,6 +63,10 @@ API desenvolvida durante o bootcamp Ignite da [Rocketseat](https://github.com/ro
 <br />
 [class-transformer](https://www.npmjs.com/package/class-transformer)
 <br />
+[aws s3](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html)
+<br />
+[aws ses](https://aws.amazon.com/pt/ses/)
+<br />
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
