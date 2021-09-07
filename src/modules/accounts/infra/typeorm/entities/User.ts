@@ -1,5 +1,6 @@
 import { Entity, Column, PrimaryColumn, CreateDateColumn } from 'typeorm';
 import { v4 as uuidV4 } from 'uuid';
+import { Expose } from 'class-transformer';
 
 @Entity('users')
 class User {
@@ -16,7 +17,6 @@ class User {
   password: string;
 
   @Column()
-  // eslint-disable-next-line camelcase
   driver_license: string;
 
   @Column()
@@ -26,12 +26,23 @@ class User {
   avatar: string;
 
   @CreateDateColumn()
-  // eslint-disable-next-line camelcase
   created_at: Date;
 
   constructor() {
     if (!this.id) {
       this.id = uuidV4();
+    }
+  }
+
+  @Expose({ name: 'avatar_url' })
+  avatar_url(): string {
+    switch (process.env.disk) {
+      case 'local':
+        return `${process.env.APP_API_URL}/avatar/${this.avatar}`;
+      case 's3':
+        return `${process.env.AWS_BUCKET_URL}/avatar/${this.avatar}`;
+      default:
+        return null;
     }
   }
 }
