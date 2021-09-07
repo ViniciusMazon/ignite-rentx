@@ -1,4 +1,3 @@
-
 import {
   Column,
   CreateDateColumn,
@@ -39,12 +38,12 @@ class Car {
   @Column()
   brand: string;
 
-  @Column()
-  category_id: string;
-
   @ManyToOne(() => Category)
   @JoinColumn({ name: 'category_id' })
   category: Category;
+
+  @Column()
+  category_id: string;
 
   @ManyToMany(() => Specification)
   @JoinTable({
