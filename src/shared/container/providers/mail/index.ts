@@ -9,6 +9,6 @@ const mailProvider = {
 };
 
 container.registerInstance<IMailProvider>(
-  'mailProvider',
+  'MailProvider',
   mailProvider[process.env.MAIL_PROVIDER],
 );
